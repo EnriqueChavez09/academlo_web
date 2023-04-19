@@ -2,24 +2,50 @@
   "name": "academlo_web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "tsc": "tsc",
+    "eslint": "eslint --ext .js,.jsx,.ts,.tsx --fix .",
+    "prettier": "prettier",
+    "test": "jest --watch",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
     "next": "13.3.0",
     "postcss": "8.4.22",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "14.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "cypress": "10.1.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "jest": "28.1.1",
+    "jest-environment-jsdom": "28.1.1",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.7"
   }
 }
