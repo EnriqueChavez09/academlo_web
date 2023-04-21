@@ -1,0 +1,50 @@
+[
+  {
+    "user": {
+      "id": 1,
+      "fullName": "John",
+      "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/john.png",
+      "country": {
+        "id": 1,
+        "name": "Dinamarca"
+      }
+    },
+    "description": "This product allows you to collaborate, experiment, and test much more effectively and efficiently."
+  },
+  {
+    "user": {
+      "id": 2,
+      "fullName": "Kathrine Joy",
+      "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/kathrine.png",
+      "country": {
+        "id": 2,
+        "name": "China"
+      }
+    },
+    "description": "We are designing for a global user base...  we can get feedback not just from drivers we see in San Francisco but from all around the world."
+  },
+  {
+    "user": {
+      "id": 3,
+      "fullName": "Mike Abla",
+      "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/mike.png",
+      "country": {
+        "id": 3,
+        "name": "Venezuela"
+      }
+    },
+    "description": "This product is a critical tool for us to understand our users and identify any pain points where they might be getting stuck."
+  },
+  {
+    "user": {
+      "id": 4,
+      "fullName": "Philis Jan",
+      "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/philis.png",
+      "country": {
+        "id": 4,
+        "name": "España"
+      }
+    },
+    "description": "I used to have a bunch of different tools I had to pay for, with this tool you get everything in one bundle."
+  }
+]
