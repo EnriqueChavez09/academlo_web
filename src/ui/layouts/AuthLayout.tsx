@@ -5,8 +5,9 @@ import { ItemTestimony } from '../components/login'
 
 type Props = {
   children: ReactNode
+  display?: string
 }
-export const AuthLayout: FC<Props> = ({ children }) => {
+export const AuthLayout: FC<Props> = ({ children, display }) => {
   return (
     <div className="flex">
       <div className="my-0 mx-auto flex-1 flex flex-col">
@@ -21,7 +22,7 @@ export const AuthLayout: FC<Props> = ({ children }) => {
         <main>{children}</main>
         <div className="rectangulo bg-primaryColor m-0"></div>
       </div>
-      <div className="m-0 fle">
+      <div className={`m-0 ${display}`}>
         <ItemTestimony />
       </div>
     </div>
