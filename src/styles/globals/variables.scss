@@ -19,5 +19,33 @@ $quaternaryFonSize: 20px;
 $quintonaryFonSize: 30px;
 $sextonaryFonSize: 32px;
 
+@mixin breakpoints($point) {
+  @if $point == sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  @if $point == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $point == lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @if $point == xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $point == xxl {
+    @media (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
 // $primaryBorderRadius: 8px;
 // $secondaryBorderRadius: 16px;

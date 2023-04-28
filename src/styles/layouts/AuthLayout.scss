@@ -1,8 +1,47 @@
 .rectangulo {
   width: 100%;
   height: 112px;
+  margin: 0 !important;
+  background-color: $primaryColor;
 }
 
 .authLayout {
-  min-height: 750px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    padding: 32px 28px;
+  }
+  &__desktop {
+    display: none;
+  }
+  &__mobile {
+    display: block;
+    background-color: $primaryColor;
+  }
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  @include breakpoints(lg) {
+    display: flex;
+    flex-direction: row;
+    &__mobile {
+      display: none;
+    }
+    &__desktop {
+      display: flex;
+    }
+  }
+}
+
+.triangle {
+  background-color: transparent;
+  margin-top: 40px !important;
+  width: 100%;
+  height: 0;
+  border-right: 50vw solid transparent;
+  border-top: 30px solid transparent;
+  border-left: 50vw solid $primaryColor;
+  border-bottom: 30px solid $primaryColor;
 }

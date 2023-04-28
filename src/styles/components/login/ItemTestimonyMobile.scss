@@ -1,0 +1,62 @@
+@mixin testimonyTextMobile($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  padding: 5px;
+  color: $secondaryColor;
+  font-weight: $fontWeight;
+  line-height: 20px;
+}
+
+.itemTestimonyMobile {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px 60px 20px;
+  &__image {
+    position: relative;
+    img {
+      max-width: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.76) 100%
+      );
+    }
+  }
+
+  &__text {
+    padding-left: 20px;
+    p:nth-child(1) {
+      @include testimonyTextMobile($tertiaryFonSize, 400);
+      font-style: italic;
+    }
+    p:nth-child(2) {
+      @include testimonyTextMobile($tertiaryFonSize, 700);
+    }
+    p:nth-child(3) {
+      @include testimonyTextMobile($primaryFonSize, 700);
+      text-transform: uppercase;
+    }
+
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      div {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
