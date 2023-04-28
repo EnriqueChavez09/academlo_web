@@ -1,0 +1,41 @@
+.inputCommon {
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 0;
+  }
+  &__input {
+    display: flex;
+    position: relative;
+    input {
+      background-color: $octenaryColor;
+      height: 36px;
+      width: 350px;
+      border-radius: 3px 0 0 3px;
+      font-size: 12px;
+      padding: 0 12px;
+      &::placeholder {
+        color: $septonaryColor;
+        font-size: 12px;
+      }
+      &:focus {
+        outline: 1px solid $tertiaryColor;
+      }
+    }
+    button {
+      position: absolute;
+      width: 35px;
+      height: 36px;
+      background-color: $octenaryColor;
+      border-radius: 0 3px 3px 0;
+      right: 0;
+    }
+  }
+}
+.inputError {
+  &__input {
+    input {
+      outline: 1px solid $quintonaryColor;
+    }
+  }
+}
