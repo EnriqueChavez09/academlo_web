@@ -55,7 +55,7 @@ export default function Login() {
         />
       </div>
       <div className="login__password">
-        <Link href="/about">Forgot you password?</Link>
+        <Link href="/auth/reset-password">Forgot you password?</Link>
       </div>
       <div className="login__button">
         <ButtonCommon

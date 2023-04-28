@@ -7,6 +7,7 @@ import { useState } from 'react'
 export default function Register() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [email, setEmail] = useState('')
   const [isVisible, setIsVisible] = useState(false)
   const change: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     const value = e.target.value
@@ -15,6 +16,9 @@ export default function Register() {
     }
     if (e.target.name === 'password') {
       setPassword(value)
+    }
+    if (e.target.name === 'email') {
+      setEmail(value)
     }
   }
   const showPassword = () => {
@@ -31,14 +35,14 @@ export default function Register() {
       </div>
       <div className="login__input">
         <InputCommon
-          type="text"
+          type="email"
           label="Your email*"
           placeholder="Please enter your email"
-          value={username}
+          value={email}
           inputRunFunction={change}
-          name="username"
+          name="email"
           isError={false}
-          icon={username.length > 5 ? AssetData.iconCheck : ''}
+          icon={email.length > 5 ? AssetData.iconCheck : ''}
         />
       </div>
       <div className="login__input">
@@ -77,11 +81,15 @@ export default function Register() {
         <ButtonCommon
           text="SIGN UP"
           customClassName={
-            username.length > 5 && password.length > 5
+            username.length > 5 && password.length > 5 && email.length > 5
               ? 'login__button__active'
               : 'login__button__active login__button__inactive'
           }
-          isDisabled={username.length > 5 && password.length > 5 ? false : true}
+          isDisabled={
+            username.length > 5 && password.length > 5 && email.length > 5
+              ? false
+              : true
+          }
           buttonRunFunction={login}
         />
       </div>

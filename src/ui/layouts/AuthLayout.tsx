@@ -9,7 +9,7 @@ type Props = {
 }
 export const AuthLayout: FC<Props> = ({ children, display }) => {
   return (
-    <div className="flex">
+    <div className="flex authLayout">
       <div className="my-0 mx-auto flex-1 flex flex-col">
         <div className="flex px-16 py-7 m-0">
           <div className="m-0 text-quintonaryFonSize font-bold">
