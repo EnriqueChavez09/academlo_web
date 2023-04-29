@@ -3,6 +3,14 @@
   margin: auto !important;
 }
 body {
-  max-width: 90rem !important;
+  max-width: 96rem !important;
   background-color: $quaternaryColor;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $septonaryColor;
+    border-radius: 4px;
+  }
 }

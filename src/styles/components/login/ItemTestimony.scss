@@ -10,6 +10,11 @@
 .itemTestimony {
   position: relative;
   width: 440px;
+  height: 100vh;
+  img {
+    height: 100vh;
+    object-fit: cover;
+  }
   p:nth-child(2) {
     @include testimonyText($tertiaryFonSize, 80px, 400);
     font-style: italic;
