@@ -1,17 +1,28 @@
 .homeLayout {
   &__header {
-    display: flex;
     background-color: $primaryColor;
-    &__links {
-      a {
-        margin: auto 10px !important;
-        font-size: $tertiaryFonSize;
-        font-weight: 500;
+    &__content {
+      max-width: 96rem;
+      display: flex;
+      &__links {
+        a {
+          margin: auto 10px !important;
+          font-size: $tertiaryFonSize;
+          font-weight: 500;
+        }
+      }
+      &__button {
+        width: 157px;
+        height: 44px;
       }
     }
-    &__button {
-      width: 157px;
-      height: 44px;
+  }
+  &__footer {
+    background-color: $secondaryColor;
+    color: $quaternaryColor;
+    height: 198px;
+    &__content {
+      max-width: 96rem;
     }
   }
 }

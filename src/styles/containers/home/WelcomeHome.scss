@@ -1,9 +1,17 @@
 .welcomeHome {
-  position: relative;
-  &__background {
-    width: 100vw;
-    img {
-      width: 100%;
+  background-color: $primaryColor;
+  &__content {
+    max-width: 96rem !important;
+    position: relative;
+    &__background {
+      width: 100vw;
+      img {
+        width: 100%;
+      }
+    }
+    &__main {
+      position: absolute;
+      top: 0;
     }
   }
 }

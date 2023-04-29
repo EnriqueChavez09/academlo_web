@@ -6,7 +6,7 @@ export const HelloCommon = () => {
       <div>
         <Image src={AssetData.iconHi} alt="" />
       </div>
-      <div>
+      <div className="helloCommon__hello">
         <p>Say, Hello!</p>
       </div>
       <div className="helloCommon__send">

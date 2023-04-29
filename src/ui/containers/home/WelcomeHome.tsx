@@ -5,12 +5,19 @@ import Image from 'next/image'
 export const WelcomeHome = () => {
   return (
     <div className="welcomeHome">
-      <Image
-        className="welcomeHome__background"
-        src={AssetData.imageBackground}
-        alt=""
-      />
-      <HelloCommon />
+      <div className="welcomeHome__content">
+        <Image
+          className="welcomeHome__content__background"
+          src={AssetData.imageBackground}
+          alt=""
+        />
+        <div className="welcomeHome__content__main">
+          <p>We</p>
+          <p>love to</p>
+          <p>help you!</p>
+          <HelloCommon />
+        </div>
+      </div>
     </div>
   )
 }
