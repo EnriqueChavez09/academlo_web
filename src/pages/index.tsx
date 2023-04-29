@@ -1,7 +1,10 @@
+import { WelcomeHome } from '@/ui/containers/home'
+import { HomeLayout } from '@/ui/layouts/HomeLayout'
+
 export default function Home() {
   return (
-    <div>
-      <p className="color">asdasdasdas</p>
-    </div>
+    <HomeLayout>
+      <WelcomeHome />
+    </HomeLayout>
   )
 }

@@ -1,0 +1,25 @@
+.homeLayout {
+  &__header {
+    display: flex;
+    background-color: $primaryColor;
+    &__links {
+      a {
+        margin: auto 10px !important;
+        font-size: $tertiaryFonSize;
+        font-weight: 500;
+      }
+    }
+    &__button {
+      width: 157px;
+      height: 44px;
+    }
+  }
+}
+
+.buttonHome {
+  background-color: $tertiaryColor;
+  color: $quaternaryColor;
+  border-radius: 12.64px;
+  width: 100%;
+  height: 100%;
+}
