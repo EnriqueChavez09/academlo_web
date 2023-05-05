@@ -1,5 +1,5 @@
 import { AssetData } from '@/lib/utils/helpers/class'
-import { ButtonCommon, InputCommon } from '@/ui/components/common'
+import { ButtonCommon, HeadCommon, InputCommon } from '@/ui/components/common'
 import { AuthLayout } from '@/ui/layouts/AuthLayout'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -29,6 +29,7 @@ export default function Register() {
   }
   return (
     <AuthLayout>
+      <HeadCommon title="resimex | register" />
       <div className="login__text">
         <p>Create an account</p>
         <p>And start your trip safely with us.</p>
