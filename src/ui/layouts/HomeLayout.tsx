@@ -2,7 +2,7 @@ import { AssetData } from '@/lib/utils/helpers/class'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC, ReactNode } from 'react'
-import { ButtonCommon, LogoCommon } from '../components/common'
+import { ButtonCommon, HelloCommon, LogoCommon } from '../components/common'
 
 type Props = {
   children: ReactNode
@@ -13,7 +13,7 @@ export const HomeLayout: FC<Props> = ({ children, isHome }) => {
     <>
       <header className="homeLayout__header">
         <div className="homeLayout__header__content">
-          <div>
+          <div className="homeLayout__header__content__logo">
             <LogoCommon />
           </div>
           <div
@@ -42,6 +42,9 @@ export const HomeLayout: FC<Props> = ({ children, isHome }) => {
           </div>
           <div className="homeLayout__footer__content__text">
             <p>contact.forwork@gmail.com</p>
+          </div>
+          <div className="homeLayout__footer__content__hello">
+            <HelloCommon />
           </div>
         </div>
       </footer>

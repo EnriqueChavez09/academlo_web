@@ -2,6 +2,8 @@
   position: relative;
   &__background {
     position: absolute;
+    right: 0;
+    left: 0;
     z-index: -1;
     &__image {
       width: 1280px;

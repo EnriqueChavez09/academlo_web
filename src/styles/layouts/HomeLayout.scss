@@ -2,7 +2,7 @@
   &__header {
     background-color: $primaryColor;
     &__content {
-      max-width: 96rem;
+      max-width: 1280px;
       display: flex;
       &__links {
         a {
@@ -15,16 +15,23 @@
         width: 157px;
         height: 44px;
       }
+      &__logo {
+        margin: auto 0 !important;
+      }
     }
+  }
+  &__main {
+    max-width: 1280px;
   }
   &__footer {
     background-color: $secondaryColor;
     height: 198px;
     &__content {
-      max-width: 96rem;
+      max-width: 1280px;
       display: flex;
       align-items: center;
       height: 100%;
+      position: relative;
       &__text {
         font-weight: 500;
         font-size: 16px;
@@ -38,6 +45,11 @@
         border-radius: 50%;
         display: flex;
         margin: 0 10px 0 100px !important;
+      }
+      &__hello {
+        position: absolute;
+        right: 50px;
+        top: -130px;
       }
     }
   }
