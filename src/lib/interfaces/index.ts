@@ -1,3 +1,5 @@
+export * from './backgroundImageInterface'
 export * from './countryInterface'
+export * from './stepInterface'
 export * from './testimonyInterface'
 export * from './userInterface'

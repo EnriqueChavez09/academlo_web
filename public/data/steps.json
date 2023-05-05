@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "number": 1,
+    "title": "Your personal information",
+    "description": "Your basic personal information help us to offert the better option to your case"
+  },
+  {
+    "id": 2,
+    "number": 2,
+    "title": "Up documentation",
+    "description": "Your basic personal information help us to offert the better option to your case"
+  },
+  {
+    "id": 3,
+    "number": 3,
+    "title": "Date with our lawyers",
+    "description": "Your basic personal information help us to offert the better option to your case"
+  }
+]

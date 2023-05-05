@@ -3,7 +3,7 @@ import { HomeLayout } from '@/ui/layouts/HomeLayout'
 
 export default function Home() {
   return (
-    <HomeLayout>
+    <HomeLayout isHome={true}>
       <WelcomeHome />
     </HomeLayout>
   )
