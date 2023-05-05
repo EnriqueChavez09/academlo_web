@@ -3,11 +3,12 @@ import Image from 'next/image'
 export const HelloCommon = () => {
   return (
     <div className="helloCommon">
-      <div>
+      <div className="helloCommon__icon">
         <Image src={AssetData.iconHi} alt="" />
       </div>
-      <div>
-        <p>Say, Hello!</p>
+      <div className="helloCommon__hello">
+        <p>Say, </p>
+        <p>Hello!</p>
       </div>
       <div className="helloCommon__send">
         <Image src={AssetData.iconSend} alt="" />
