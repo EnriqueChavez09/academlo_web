@@ -7,12 +7,13 @@ import mailData from '../../../../public/assets/icons/mail.svg'
 import sendData from '../../../../public/assets/icons/send.svg'
 import backgroundData from '../../../../public/assets/images/background.svg'
 import logoData from '../../../../public/assets/images/country.svg'
+import investmentData from '../../../../public/assets/images/investment.png'
 import placeholderData from '../../../../public/assets/images/placeholder.svg'
-
 export class AssetData {
   static imageLogo = logoData
   static imagePlaceholder = placeholderData
   static imageBackground = backgroundData
+  static imageInvestment = investmentData
 
   static iconCheck = checkData
   static iconEye = eyeData

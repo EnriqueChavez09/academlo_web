@@ -9,6 +9,9 @@ type Props = {
   isHome?: boolean
 }
 export const HomeLayout: FC<Props> = ({ children, isHome }) => {
+  const redirectApplication = () => {
+    window.location.href = '/application'
+  }
   return (
     <>
       <header className="homeLayout__header">
@@ -30,7 +33,11 @@ export const HomeLayout: FC<Props> = ({ children, isHome }) => {
               !isHome && 'displayNone'
             }`}
           >
-            <ButtonCommon text="Get started" customClassName="buttonHome" />
+            <ButtonCommon
+              text="Get started"
+              customClassName="buttonHome"
+              buttonRunFunction={redirectApplication}
+            />
           </div>
         </div>
       </header>

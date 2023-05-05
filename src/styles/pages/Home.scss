@@ -1,0 +1,9 @@
+.home {
+  &__investment {
+    padding: 60px 0 60px 0;
+    background-color: $quaternaryColor;
+  }
+  &__content {
+    background-color: $primaryColor;
+  }
+}
