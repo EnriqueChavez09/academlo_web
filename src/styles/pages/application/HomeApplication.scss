@@ -1,0 +1,17 @@
+.homeApplication {
+  position: relative;
+  &__background {
+    position: absolute;
+    z-index: -1;
+    &__image {
+      width: 1280px;
+      height: 400px;
+      background-color: burlywood;
+    }
+    &__trapeze {
+      width: 1280px;
+      height: 400px;
+      background-color: aquamarine;
+    }
+  }
+}

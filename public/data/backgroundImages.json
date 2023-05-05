@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/background_1.png"
+  },
+  {
+    "id": 2,
+    "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/background_2.png"
+  },
+  {
+    "id": 3,
+    "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/background_3.png"
+  },
+  {
+    "id": 4,
+    "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/background_4.png"
+  }
+]
