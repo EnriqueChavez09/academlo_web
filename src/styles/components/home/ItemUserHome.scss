@@ -1,0 +1,9 @@
+.itemUserHome {
+  position: relative;
+  margin: 0 20px 0 0 !important;
+  &__country {
+    position: absolute;
+    top: 0;
+    right: -12px;
+  }
+}

@@ -2,7 +2,7 @@ import { CountryInterface } from './countryInterface'
 
 export interface UserInterface {
   id: number
-  fullName: string
+  fullName?: string
   photo: string
   country: CountryInterface
 }

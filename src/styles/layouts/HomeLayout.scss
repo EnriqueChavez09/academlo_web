@@ -19,10 +19,26 @@
   }
   &__footer {
     background-color: $secondaryColor;
-    color: $quaternaryColor;
     height: 198px;
     &__content {
       max-width: 96rem;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      &__text {
+        font-weight: 500;
+        font-size: 16px;
+        color: $quaternaryColor;
+        margin: 0 !important;
+      }
+      &__mail {
+        background-color: $quaternaryColor;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        margin: 0 10px 0 100px !important;
+      }
     }
   }
 }

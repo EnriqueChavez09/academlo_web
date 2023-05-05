@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/user_1.png",
+    "country": {
+      "id": 1,
+      "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/brasil.png"
+    }
+  },
+  {
+    "id": 2,
+    "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/user_2.png",
+    "country": {
+      "id": 2,
+      "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/colombia.png"
+    }
+  },
+  {
+    "id": 3,
+    "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/user_3.png",
+    "country": {
+      "id": 3,
+      "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/francia.png"
+    }
+  },
+  {
+    "id": 4,
+    "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/user_4.png",
+    "country": {
+      "id": 4,
+      "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/argentina.png"
+    }
+  },
+  {
+    "id": 5,
+    "photo": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/user_5.png",
+    "country": {
+      "id": 5,
+      "image": "https://dev3ch.s3.us-east-2.amazonaws.com/images/academlo/peru.png"
+    }
+  }
+]

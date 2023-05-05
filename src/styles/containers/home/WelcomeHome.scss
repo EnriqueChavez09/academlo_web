@@ -1,3 +1,11 @@
+@mixin welcomeText($fontSize, $fontWeight, $rotate) {
+  font-size: $fontSize;
+  padding: 10px;
+  font-weight: $fontWeight;
+  font-family: $secondaryFontFamily;
+  transform: rotate($rotate);
+  margin: 0 !important;
+}
 .welcomeHome {
   background-color: $primaryColor;
   &__content {
@@ -11,7 +19,58 @@
     }
     &__main {
       position: absolute;
-      top: 0;
+      top: 40px;
+      left: 0;
+      right: 0;
+      max-width: 900px;
+      &__text {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 750px;
+        p:nth-child(1) {
+          @include welcomeText(62px, 600, 25deg);
+        }
+        p:nth-child(2) {
+          @include welcomeText(62px, 600, -25deg);
+        }
+        p:nth-child(3) {
+          @include welcomeText(62px, 600, 25deg);
+        }
+      }
+      &__global {
+        display: flex;
+        min-height: 400px;
+        &__country {
+          margin: 40px auto !important;
+          &__arrow {
+            margin: 20px auto !important;
+            display: flex;
+            &__right {
+              margin-left: 10px !important;
+            }
+            &__left {
+              margin-right: 120px !important;
+            }
+          }
+          &__text {
+            padding-top: 60px;
+            max-width: 510px;
+            p:nth-child(1) {
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 25px;
+            }
+            p:nth-child(2) {
+              font-size: 20px;
+              line-height: 25px;
+            }
+          }
+          &__items {
+            display: flex;
+            padding-top: 50px;
+          }
+        }
+      }
     }
   }
 }

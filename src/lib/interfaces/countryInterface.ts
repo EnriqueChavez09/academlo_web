@@ -1,4 +1,5 @@
 export interface CountryInterface {
   id: number
-  name: string
+  name?: string
+  image?: string
 }

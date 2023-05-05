@@ -1,0 +1,38 @@
+.arrowCommon {
+  height: 22px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  display: flex;
+  font-size: 10px;
+  max-width: 100px;
+}
+
+.arrowLeftCommon {
+  background-color: #07469c;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  &__image {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+  }
+}
+
+.arrowRightCommon {
+  background-color: #f4c311;
+  color: #000000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  &__image {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+  }
+}

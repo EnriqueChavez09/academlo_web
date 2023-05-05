@@ -1,3 +1,5 @@
+import { AssetData } from '@/lib/utils/helpers/class'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC, ReactNode } from 'react'
 import { ButtonCommon, LogoCommon } from '../components/common'
@@ -26,7 +28,12 @@ export const HomeLayout: FC<Props> = ({ children }) => {
       <main>{children}</main>
       <footer className="homeLayout__footer">
         <div className="homeLayout__footer__content">
-          <p>contact.forwork@gmail.com</p>
+          <div className="homeLayout__footer__content__mail">
+            <Image src={AssetData.iconMail} alt="" />
+          </div>
+          <div className="homeLayout__footer__content__text">
+            <p>contact.forwork@gmail.com</p>
+          </div>
         </div>
       </footer>
     </>
