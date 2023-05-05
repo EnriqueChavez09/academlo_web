@@ -1,0 +1,16 @@
+.aplication {
+  background-color: #e6ecf5;
+
+  &__welcome {
+    padding-top: 76px;
+    display: flex;
+    justify-content: center;
+  }
+  &__council {
+    display: flex;
+    justify-content: center;
+  }
+  &__footer {
+    padding-top: 0px;
+  }
+}

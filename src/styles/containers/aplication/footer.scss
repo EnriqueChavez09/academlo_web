@@ -1,0 +1,27 @@
+.footer {
+  &__background {
+    display: flex;
+    background-color: $secondaryColor;
+    width: auto;
+    height: 198px;
+    padding: 84px 0 60px 0;
+    &__icon {
+      background-color: #ffffff;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      margin: 0 8px 0 98px;
+      padding: 12px 14px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__text {
+      color: #ffffff;
+      font-size: $tertiaryFonSize;
+      font-weight: 500;
+      margin-top: 12px;
+    }
+  }
+}

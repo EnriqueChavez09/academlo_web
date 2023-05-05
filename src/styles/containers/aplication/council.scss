@@ -1,0 +1,70 @@
+@mixin councilMixin($isActive, $fontSize) {
+  font-size: $fontSize;
+  background-color: #e6ecf5;
+  @if $isActive {
+  } @else {
+    color: #ffffff;
+    background-color: $secondaryColor;
+  }
+}
+
+.council {
+  width: 540px;
+  height: 416px;
+  border-radius: 10px;
+  background-color: $octenaryColor;
+  padding: 46px 40px 42px 34px;
+  position: absolute;
+  z-index: 99;
+  &__information {
+    display: flex;
+    &__position {
+      color: $secondaryColor;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: $sextonaryFonSize;
+      font-weight: 700px;
+      padding: 0 14px;
+      @include councilMixin(true, $tertiaryColor);
+      div {
+        border: 3px solid #e6ecf5;
+        width: 0;
+        margin-top: 2px;
+        margin-left: 6px;
+        height: 208px;
+      }
+    }
+    &__position:hover {
+      @include councilMixin(false, $tertiaryColor);
+    }
+    &__text {
+      padding-left: 28px;
+      p:nth-child(1) {
+        color: $sextonaryColor;
+        font-size: 22px;
+        font-weight: 700;
+        padding-top: 6px;
+      }
+      p:nth-child(2) {
+        font-size: $tertiaryFonSize;
+        font-weight: 300;
+        padding: 12px 0 22px 0;
+      }
+    }
+  }
+  &__button {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 344px;
+      background-color: $tertiaryColor;
+      border-radius: 10px;
+      height: 56px;
+      color: #ffffff;
+      font-size: $secondaryFonSize;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.imagen {
+  &__image {
+    margin-top: 300px;
+    img {
+      clip-path: polygon(0% 50%, 100% 10%, 100% 100%, 0% 100%);
+    }
+  }
+}

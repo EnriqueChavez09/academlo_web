@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  margin-left: 96px;
+  width: 160px;
+  height: 42px;
+  &__title {
+    font-size: $quintonaryFonSize;
+    color: #000000;
+    font-weight: 700;
+    font-family: $secondaryFontFamily;
+    margin-top: 38px;
+  }
+  &__icon {
+    height: 36px;
+    width: 36px;
+    margin: 42px 0 0 14px;
+  }
+}

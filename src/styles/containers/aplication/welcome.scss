@@ -1,0 +1,28 @@
+.welcome {
+  &__title {
+    color: $secondaryColor;
+    font-size: $sextonaryFonSize;
+    text-align: center;
+    font-weight: 700;
+  }
+  &__rectangle {
+    background-color: $tertiaryColor;
+    width: 28px;
+    height: 8px;
+    margin: 14px auto 20px;
+  }
+  &__text {
+    font-size: $tertiaryFonSize;
+    font-weight: 300;
+    text-align: center;
+    height: 120px;
+    width: 516px;
+    margin-bottom: 30px;
+    p:nth-child(1) {
+      padding-top: 0;
+    }
+    p:nth-child(2) {
+      padding-top: 20px;
+    }
+  }
+}
