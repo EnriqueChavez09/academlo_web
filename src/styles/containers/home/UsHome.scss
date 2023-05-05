@@ -1,0 +1,22 @@
+.usHome {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  &__text {
+    p:nth-child(1) {
+      @extend .h2;
+      line-height: 35.2px;
+      text-align: center;
+    }
+    div:nth-child(2) {
+      width: 28px;
+      height: 7px;
+      background-color: $tertiaryColor;
+      margin: 20px auto !important;
+    }
+  }
+  &__items {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+  }
+}
