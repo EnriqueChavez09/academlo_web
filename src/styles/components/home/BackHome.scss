@@ -1,0 +1,17 @@
+.backHome {
+  display: flex;
+  max-width: 120px;
+  margin: auto 80px auto auto !important;
+  &__arrow {
+    display: flex;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

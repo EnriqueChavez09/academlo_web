@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 type Props = {
-  label: string
+  label?: string
   placeholder: string
   value: string
   name: string

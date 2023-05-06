@@ -1,6 +1,11 @@
 import { HeadCommon } from '@/ui/components/common'
-import { InvestmentHome } from '@/ui/components/home'
-import { ProgramHome, UsHome, WelcomeHome } from '@/ui/containers/home'
+import { BackHome, InvestmentHome } from '@/ui/components/home'
+import {
+  FormHome,
+  ProgramHome,
+  UsHome,
+  WelcomeHome,
+} from '@/ui/containers/home'
 import { HomeLayout } from '@/ui/layouts/HomeLayout'
 
 export default function Home() {
@@ -20,6 +25,12 @@ export default function Home() {
         <div className="home__content__us">
           <UsHome />
         </div>
+      </div>
+      <div className="home__back">
+        <BackHome />
+      </div>
+      <div className="home__form">
+        <FormHome />
       </div>
     </HomeLayout>
   )
