@@ -51,7 +51,7 @@ $sextonaryFonSize: 32px;
 // $secondaryBorderRadius: 16px;
 
 .displayNone {
-  display: none;
+  display: none !important;
 }
 
 .h2 {

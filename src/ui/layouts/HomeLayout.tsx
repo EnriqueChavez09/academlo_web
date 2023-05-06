@@ -9,6 +9,7 @@ type Props = {
   isHome?: boolean
 }
 export const HomeLayout: FC<Props> = ({ children, isHome }) => {
+  console.log(isHome)
   const redirectApplication = () => {
     window.location.href = '/application'
   }

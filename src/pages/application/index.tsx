@@ -21,8 +21,9 @@ export default function HomeAplication() {
           </div>
         </div>
         <div className="homeApplication__content">
-          <div>
+          <div className="homeApplication__content__text">
             <p>Get your Mexican Residence!</p>
+            <div className="homeApplication__content__text__rectangle"></div>
             <p>
               Lifestyle choices vary, which is why we take the time to learn
               about your individual situation and requirements.
@@ -32,18 +33,20 @@ export default function HomeAplication() {
               insight and knowledge needed to succeed.
             </p>
           </div>
-          {StepService.getListSteps().map((item) => {
-            return (
-              <ItemStepAplication
-                key={item.id}
-                itemStep={item}
-                numberActive={currentStep}
-              />
-            )
-          })}
-          <div>
+          <div className="homeApplication__content__item">
+            {StepService.getListSteps().map((item) => {
+              return (
+                <ItemStepAplication
+                  key={item.id}
+                  itemStep={item}
+                  numberActive={currentStep}
+                />
+              )
+            })}
+          </div>
+          <div className="homeApplication__content__button">
             <ButtonCommon
-              customClassName=""
+              customClassName="buttonHome"
               text={currentStep === 0 ? 'GET STARTED' : 'CONTINUE'}
             />
           </div>
