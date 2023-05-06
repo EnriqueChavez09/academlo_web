@@ -1,28 +1,43 @@
 .helloCommon {
-  height: 237px;
-  width: 237px;
+  height: 203px;
+  width: 203px;
   background-color: $quaternaryColor;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: center;
+  @include breakpoints(md) {
+    height: 220px;
+    width: 220px;
+  }
+  @include breakpoints(lg) {
+    height: 237px;
+    width: 237px;
+  }
   &__send {
     background-color: $tertiaryColor;
-    height: 57px;
-    width: 57px;
+    height: 49px;
+    width: 49px;
     display: flex;
     border-radius: 50%;
     position: absolute;
     right: 0px;
     bottom: 10px;
+    @include breakpoints(md) {
+      height: 57px;
+      width: 57px;
+    }
   }
   &__hello {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     color: $tertiaryColor;
     margin: 0 auto 0 auto !important;
     line-height: 39px;
+    @include breakpoints(md) {
+      font-size: 30px;
+    }
   }
   &__icon {
     margin: 0 !important;

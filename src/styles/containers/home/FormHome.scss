@@ -15,11 +15,17 @@
     }
   }
   &__form {
-    width: 553px;
+    width: 370px;
     height: 410px;
     background-color: #eeeeee;
     border-radius: 18.96px;
     padding: 0px 30px;
+    @include breakpoints(lg) {
+      width: 420px;
+    }
+    @include breakpoints(xl) {
+      width: 553px;
+    }
     &__button {
       width: 250.72px;
       height: 61.92px;

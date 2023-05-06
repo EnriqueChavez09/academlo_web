@@ -11,7 +11,10 @@
   flex-direction: column;
   background-color: white;
   &__logo {
-    padding: 32px 28px;
+    padding: 10px 28px;
+    @include breakpoints(md) {
+      padding: 32px 28px;
+    }
   }
   &__desktop {
     display: none;

@@ -1,6 +1,6 @@
-@mixin welcomeText($fontSize, $fontWeight, $rotate) {
+@mixin welcomeText($fontSize, $fontWeight, $rotate, $padding: 10px) {
   font-size: $fontSize;
-  padding: 10px;
+  padding: $padding;
   font-weight: $fontWeight;
   font-family: $secondaryFontFamily;
   transform: rotate($rotate);
@@ -9,12 +9,27 @@
 .welcomeHome {
   background-color: $primaryColor;
   &__content {
-    max-width: 96rem !important;
+    max-width: 1280px !important;
     position: relative;
     &__background {
+      display: none;
+      @include breakpoints(lg) {
+        display: block;
+        width: 100vw;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__backgroundMobile {
+      display: block;
       width: 100vw;
-      img {
-        width: 100%;
+      object-fit: cover;
+      @include breakpoints(md) {
+        height: 700px;
+      }
+      @include breakpoints(lg) {
+        display: none;
       }
     }
     &__main {
@@ -25,26 +40,56 @@
       max-width: 900px;
       &__text {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         max-width: 750px;
         p:nth-child(1) {
-          @include welcomeText(62px, 600, 25deg);
+          @include welcomeText(40px, 600, 25deg, 3px);
         }
         p:nth-child(2) {
-          @include welcomeText(62px, 600, -25deg);
+          @include welcomeText(40px, 600, -25deg, 3px);
         }
         p:nth-child(3) {
-          @include welcomeText(62px, 600, 25deg);
+          @include welcomeText(40px, 600, 25deg, 3px);
+        }
+        @include breakpoints(xl) {
+          justify-content: flex-end;
+          p:nth-child(1) {
+            @include welcomeText(62px, 600, 25deg);
+          }
+          p:nth-child(2) {
+            @include welcomeText(62px, 600, -25deg);
+          }
+          p:nth-child(3) {
+            @include welcomeText(62px, 600, 25deg);
+          }
+        }
+      }
+      &__arrow {
+        display: flex;
+        padding-top: 40px;
+        @include breakpoints(xl) {
+          display: none;
         }
       }
       &__global {
         display: flex;
-        min-height: 400px;
+        min-height: 200px;
+        padding-top: 40px;
+        @include breakpoints(lg) {
+          padding-top: 0;
+          min-height: 400px;
+        }
+        @include breakpoints(xl) {
+          min-height: 400px;
+        }
         &__country {
           margin: 40px auto !important;
           &__arrow {
             margin: 20px auto !important;
-            display: flex;
+            display: none;
+            @include breakpoints(xl) {
+              display: flex;
+            }
             &__right {
               margin-left: 10px !important;
             }
@@ -53,21 +98,47 @@
             }
           }
           &__text {
-            padding-top: 60px;
-            max-width: 510px;
+            padding-top: 20px;
+            max-width: 200px;
+            @include breakpoints(md) {
+              max-width: 300px;
+            }
+            @include breakpoints(lg) {
+              padding-top: 60px;
+              max-width: 510px;
+            }
             p:nth-child(1) {
               font-weight: 700;
-              font-size: 20px;
-              line-height: 25px;
+              font-size: 14px;
+              line-height: 19px;
+              @include breakpoints(lg) {
+                font-size: 20px;
+                line-height: 25px;
+              }
             }
             p:nth-child(2) {
-              font-size: 20px;
-              line-height: 25px;
+              font-size: 14px;
+              line-height: 19px;
+              @include breakpoints(lg) {
+                font-size: 20px;
+                line-height: 25px;
+              }
             }
           }
           &__items {
-            display: flex;
-            padding-top: 50px;
+            display: none;
+            @include breakpoints(lg) {
+              display: flex;
+              padding-top: 50px;
+            }
+          }
+        }
+        &__items {
+          display: flex;
+          justify-content: center;
+          padding-top: 100px;
+          @include breakpoints(lg) {
+            display: none;
           }
         }
       }
