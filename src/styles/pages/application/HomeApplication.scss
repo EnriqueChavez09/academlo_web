@@ -2,18 +2,88 @@
   position: relative;
   &__background {
     position: absolute;
+    padding-top: 110px;
     right: 0;
     left: 0;
     z-index: -1;
+    background-color: $primaryColor;
     &__image {
       width: 1280px;
-      height: 400px;
-      background-color: burlywood;
+      height: 329px;
+      clip-path: polygon(0% 50%, 100% 10%, 100% 100%, 0% 100%);
+      @include breakpoints(sm) {
+        width: auto;
+        height: auto;
+      }
+      @include breakpoints(md) {
+        width: auto;
+        height: auto;
+      }
     }
     &__trapeze {
       width: 1280px;
-      height: 400px;
-      background-color: aquamarine;
+      height: 470px;
+      background-color: $primaryColor;
+      @include breakpoints(sm) {
+        width: auto;
+        height: 750px;
+      }
+      @include breakpoints(md) {
+        width: auto;
+        height: 600px;
+      }
+      @include breakpoints(lg) {
+        width: auto;
+        height: 490px;
+      }
+    }
+  }
+  &__content {
+    &__text {
+      max-width: 540px;
+      padding-bottom: 40px;
+      p:nth-child(1) {
+        text-align: center;
+        color: $secondaryColor;
+        font-size: $sextonaryFonSize;
+        font-weight: 700;
+        font-family: $secondaryFontFamily;
+        padding-bottom: 5px;
+      }
+      &__rectangle {
+        background-color: $tertiaryColor;
+        width: 28px;
+        height: 7px;
+      }
+      p:nth-child(3) {
+        text-align: center;
+        color: #000000;
+        font-size: $tertiaryFonSize;
+        font-weight: 300;
+        max-width: 516px;
+        padding-top: 24px;
+      }
+      p:nth-child(4) {
+        text-align: center;
+        color: #000000;
+        font-size: $tertiaryFonSize;
+        font-weight: 300;
+        max-width: 516px;
+      }
+    }
+    &__item {
+      background-color: white;
+      max-width: 540px;
+      border-radius: 10px;
+      padding: 10px 0 40px 0;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      width: 344px;
+      height: 55.92px;
+      margin: 40px auto 100px auto !important;
     }
   }
 }

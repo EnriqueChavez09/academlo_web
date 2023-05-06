@@ -2,15 +2,15 @@ import Image from 'next/image'
 import { FC } from 'react'
 type Props = {
   text: string
-  customClassName: string
+  customClassName?: string
   isDisabled?: boolean
   src?: string
   buttonRunFunction?: React.MouseEventHandler<HTMLButtonElement>
 }
 export const ButtonCommon: FC<Props> = ({
   text,
-  customClassName,
   isDisabled = false,
+  customClassName,
   src = '',
   buttonRunFunction,
 }) => {
