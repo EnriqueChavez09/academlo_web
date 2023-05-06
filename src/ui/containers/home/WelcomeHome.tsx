@@ -14,11 +14,25 @@ export const WelcomeHome = () => {
           alt=""
           priority={true}
         />
+        <Image
+          className="welcomeHome__content__backgroundMobile"
+          src={AssetData.imageBackgroundMobile}
+          alt=""
+          priority={true}
+        />
         <div className="welcomeHome__content__main">
           <div className="welcomeHome__content__main__text">
             <p>We</p>
             <p>love to</p>
             <p>help you!</p>
+          </div>
+          <div className="welcomeHome__content__main__arrow">
+            <div className="welcomeHome__content__main__arrow__right">
+              <ArrowCommon text="Our Team" isLeft={false} />
+            </div>
+            <div className="welcomeHome__content__main__arrow__left">
+              <ArrowCommon text="You" isLeft={true} />
+            </div>
           </div>
           <div className="welcomeHome__content__main__global">
             <div className="welcomeHome__content__main__global__hi">
@@ -46,6 +60,11 @@ export const WelcomeHome = () => {
                 })}
               </div>
             </div>
+          </div>
+          <div className="welcomeHome__content__main__global__items">
+            {UserService.getListUsers().map((item) => {
+              return <ItemUserHome itemUser={item} key={item.id} />
+            })}
           </div>
         </div>
       </div>

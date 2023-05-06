@@ -1,10 +1,22 @@
 .itemUsHome {
-  width: 241px;
-  height: 219px;
+  width: 370px;
+  height: 180px;
   border-radius: 10px;
   background-color: $quaternaryColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: auto 15px !important;
+  margin: 20px auto !important;
+  @include breakpoints(md) {
+    width: 400px;
+    height: 219px;
+    margin: 20px auto !important;
+  }
+
+  @include breakpoints(lg) {
+    width: 241px;
+    height: 219px;
+    margin: auto 15px !important;
+  }
+
   p:nth-child(1) {
     @extend .h3;
     line-height: 22px;

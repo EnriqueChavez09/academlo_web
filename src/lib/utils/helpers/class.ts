@@ -7,6 +7,7 @@ import hiData from '../../../../public/assets/icons/hi.svg'
 import mailData from '../../../../public/assets/icons/mail.svg'
 import sendData from '../../../../public/assets/icons/send.svg'
 import backgroundData from '../../../../public/assets/images/background.svg'
+import backgroundMobileData from '../../../../public/assets/images/background_mobile.svg'
 import logoData from '../../../../public/assets/images/country.svg'
 import formData from '../../../../public/assets/images/form.png'
 import investmentData from '../../../../public/assets/images/investment.png'
@@ -16,6 +17,7 @@ export class AssetData {
   static imageLogo = logoData
   static imagePlaceholder = placeholderData
   static imageBackground = backgroundData
+  static imageBackgroundMobile = backgroundMobileData
   static imageInvestment = investmentData
   static imageForm = formData
 

@@ -1,8 +1,19 @@
 .investmentHome {
-  display: flex;
+  display: block;
+  @include breakpoints(lg) {
+    display: flex;
+  }
   &__text {
-    max-width: 440px;
-    margin: auto auto auto 20px !important;
+    max-width: 370px;
+    margin: 20px auto !important;
+    @include breakpoints(md) {
+      max-width: 390px;
+      margin: 20px auto !important;
+    }
+    @include breakpoints(xl) {
+      max-width: 440px;
+      margin: auto auto auto 20px !important;
+    }
     p:nth-child(1) {
       @extend .h2;
       line-height: 35.2px;
@@ -24,6 +35,25 @@
     }
   }
   &__image {
-    margin: auto 20px auto auto !important;
+    margin: auto !important;
+    img {
+      width: 370px;
+    }
+    @include breakpoints(md) {
+      img {
+        width: 400px;
+      }
+    }
+    @include breakpoints(lg) {
+      margin: auto 20px auto auto !important;
+      img {
+        width: 320px;
+      }
+    }
+    @include breakpoints(xl) {
+      img {
+        width: 405px;
+      }
+    }
   }
 }

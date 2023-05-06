@@ -1,7 +1,10 @@
 .backHome {
   display: flex;
   max-width: 120px;
-  margin: auto 80px auto auto !important;
+  margin: auto 10px auto auto !important;
+  @include breakpoints(lg) {
+    margin: auto 80px auto auto !important;
+  }
   &__arrow {
     display: flex;
     background-color: white;

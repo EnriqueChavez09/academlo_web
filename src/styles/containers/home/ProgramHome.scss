@@ -1,10 +1,20 @@
 .programHome {
-  display: flex;
+  display: block;
   padding-top: 40px;
   padding-bottom: 40px;
+  @include breakpoints(lg) {
+    display: flex;
+  }
   &__text {
-    max-width: 280px;
-    margin: auto 40px auto auto !important;
+    max-width: 370px;
+    margin: auto !important;
+    @include breakpoints(md) {
+      max-width: 400px;
+    }
+    @include breakpoints(lg) {
+      max-width: 280px;
+      margin: auto 40px auto auto !important;
+    }
     p:nth-child(1) {
       @extend .h2;
       line-height: 35.2px;
@@ -26,12 +36,20 @@
     }
   }
   &__residency {
-    margin: auto auto auto 40px !important;
-    width: 497px;
+    margin: auto !important;
+    width: 370px;
     height: 396px;
     border-radius: 10px;
     background-color: $quaternaryColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @include breakpoints(lg) {
+      width: 400px;
+      margin: auto auto auto 0px !important;
+    }
+    @include breakpoints(xl) {
+      width: 497px;
+      margin: auto auto auto 40px !important;
+    }
     &__circle {
       margin: 20px auto !important;
       width: 68px;
@@ -44,8 +62,11 @@
       height: 44px;
     }
     &__text {
-      max-width: 442px;
+      max-width: 340px;
       padding-bottom: 60px;
+      @include breakpoints(xl) {
+        max-width: 442px;
+      }
       p:nth-child(1) {
         @extend .h3;
         line-height: 35.2px;

@@ -15,8 +15,11 @@
     }
   }
   &__items {
-    display: flex;
-    padding-top: 20px;
+    display: block;
     justify-content: center;
+    @include breakpoints(lg) {
+      display: flex;
+      padding-top: 20px;
+    }
   }
 }
