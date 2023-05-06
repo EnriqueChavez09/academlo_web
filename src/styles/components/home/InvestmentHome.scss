@@ -1,0 +1,29 @@
+.investmentHome {
+  display: flex;
+  &__text {
+    max-width: 440px;
+    margin: auto auto auto 20px !important;
+    p:nth-child(1) {
+      @extend .h2;
+      line-height: 35.2px;
+    }
+    div:nth-child(2) {
+      width: 28px;
+      height: 7px;
+      background-color: $tertiaryColor;
+      margin: 20px 0 !important;
+    }
+    p:nth-child(3) {
+      @extend .h4;
+      line-height: 20.08px;
+    }
+    p:nth-child(4) {
+      padding-top: 20px;
+      line-height: 20.08px;
+      @extend .h4;
+    }
+  }
+  &__image {
+    margin: auto 20px auto auto !important;
+  }
+}

@@ -1,5 +1,5 @@
 import { AssetData } from '@/lib/utils/helpers/class'
-import { ButtonCommon, InputCommon } from '@/ui/components/common'
+import { ButtonCommon, HeadCommon, InputCommon } from '@/ui/components/common'
 import { AuthLayout } from '@/ui/layouts/AuthLayout'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -25,6 +25,7 @@ export default function Login() {
   }
   return (
     <AuthLayout>
+      <HeadCommon title="resimex | login" />
       <div className="login__text">
         <p>Welcome to you Resimex</p>
         <p>Log in to your account.</p>

@@ -1,5 +1,6 @@
 export * from './ArrowCommon'
 export * from './ButtonCommon'
+export * from './HeadCommon'
 export * from './HelloCommon'
 export * from './InputCommon'
 export * from './LogoCommon'

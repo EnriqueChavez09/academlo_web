@@ -1,5 +1,5 @@
 import { AssetData } from '@/lib/utils/helpers/class'
-import { ButtonCommon, InputCommon } from '@/ui/components/common'
+import { ButtonCommon, HeadCommon, InputCommon } from '@/ui/components/common'
 import { AuthLayout } from '@/ui/layouts/AuthLayout'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -18,6 +18,7 @@ export default function ResetPassword() {
   }
   return (
     <AuthLayout display="hidden">
+      <HeadCommon title="resimex | reset password" />
       <div className="resetPassword">
         <div className="resetPassword__text">
           <p>Reset your password</p>
