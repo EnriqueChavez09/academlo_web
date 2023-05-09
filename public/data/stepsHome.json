@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Help & frequency questions",
+    "description": "Lifestyle choices vary, which is why we take the time to learn about your individual situation and requirements.",
+    "description_two": "We’ll assist you from start to ﬁnish, ensuring you have the insight and knowledge needed to succeed."
+  },
+  {
+    "id": 2,
+    "title": "Why is important this information?",
+    "description": "Lifestyle choices vary, which is why we take the time to learn about your individual situation and requirements.",
+    "description_two": "We’ll assist you from start to ﬁnish, ensuring you have the insight and knowledge needed to succeed."
+  },
+  {
+    "id": 3,
+    "title": "Next step",
+    "description": "We redirect you to a secure payment platform Stripe. Once the payment is made, you must return to this page to schedule a call with your advisor",
+    "description_two": ""
+  }
+]

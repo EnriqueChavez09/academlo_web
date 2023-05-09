@@ -1,0 +1,23 @@
+.personalInformation {
+  display: flex;
+  &__content {
+    margin-right: 20px !important;
+    &__text {
+      padding-top: 48px;
+      p {
+        padding-top: 16px;
+        @extend .h2;
+      }
+    }
+    &__form {
+      padding: 40px 0 80px 0;
+    }
+  }
+  &__information {
+    margin-left: 20px !important;
+  }
+}
+
+// main {
+//   height: calc(100vh - 307px);
+// }

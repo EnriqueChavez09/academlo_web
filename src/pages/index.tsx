@@ -1,4 +1,3 @@
-import { HeadCommon } from '@/ui/components/common'
 import { BackHome, InvestmentHome } from '@/ui/components/home'
 import {
   FormHome,
@@ -10,8 +9,7 @@ import { HomeLayout } from '@/ui/layouts/HomeLayout'
 
 export default function Home() {
   return (
-    <HomeLayout isHome={true}>
-      <HeadCommon title="resimex" />
+    <HomeLayout isHome={true} title="resimex">
       <div className="home__welcome">
         <WelcomeHome />
       </div>
