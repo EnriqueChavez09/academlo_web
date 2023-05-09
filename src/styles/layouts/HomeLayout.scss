@@ -38,6 +38,8 @@
   &__main {
     position: relative;
     max-width: 1280px;
+    // background-color: white;
+    // z-index: -11;
   }
   &__footer {
     background-color: $secondaryColor;

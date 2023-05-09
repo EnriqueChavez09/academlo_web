@@ -6,6 +6,7 @@ import eyeData from '../../../../public/assets/icons/eye.svg'
 import hiData from '../../../../public/assets/icons/hi.svg'
 import mailData from '../../../../public/assets/icons/mail.svg'
 import sendData from '../../../../public/assets/icons/send.svg'
+import uploadData from '../../../../public/assets/icons/upload.svg'
 import backgroundData from '../../../../public/assets/images/background.svg'
 import backgroundMobileData from '../../../../public/assets/images/background_mobile.svg'
 import logoData from '../../../../public/assets/images/country.svg'
@@ -29,4 +30,5 @@ export class AssetData {
   static iconArrowLeft = arrowLeftData
   static iconArrowRight = arrowReightData
   static iconArrowTop = arrowTopData
+  static iconUpload = uploadData
 }

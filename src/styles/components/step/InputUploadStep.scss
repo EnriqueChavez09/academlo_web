@@ -1,0 +1,34 @@
+.inputUploadStep {
+  &__customUpload {
+    border: 1px dashed #8e8e8e;
+    position: relative;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    input {
+      position: absolute;
+      left: -9999px;
+    }
+    label {
+      cursor: pointer;
+      margin-right: 10px !important;
+    }
+    span {
+      display: inline-block;
+      margin-left: 10px !important;
+      color: #8e8e8e;
+    }
+  }
+  &__text {
+    padding-top: 10px;
+    color: #8e8e8e;
+    text-align: center;
+    font-size: 13px;
+  }
+  &__label {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 12px;
+  }
+}
