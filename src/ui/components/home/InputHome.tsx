@@ -1,26 +1,25 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 type Props = {
   placeholder: string
-  value: string
   name: string
   isError?: boolean
   type: React.HTMLInputTypeAttribute
-  inputRunFunction?: React.ChangeEventHandler<HTMLInputElement>
 }
 
-export const InputHome: FC<Props> = ({
-  placeholder,
-  value,
-  name,
-  type,
-  inputRunFunction,
-}) => {
+export const InputHome: FC<Props> = ({ placeholder, name, type }) => {
+  const [first, setfirst] = useState('')
+  const onChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+    const value = e.target.value
+    if (e.target.name === name) {
+      setfirst(value)
+    }
+  }
   return (
     <input
       type={type}
       placeholder={placeholder}
-      value={value}
-      onChange={inputRunFunction}
+      value={first}
+      onChange={onChange}
       name={name}
       className="inputHome"
     />

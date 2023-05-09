@@ -1,0 +1,40 @@
+.inputPersonalInformation {
+  display: flex;
+  div:nth-child(1) {
+    width: 100%;
+    margin-right: 10px !important;
+  }
+  div:nth-child(2) {
+    width: 100%;
+    margin-left: 10px !important;
+  }
+}
+.formPersonalInformationStep {
+  @extend .borderContent;
+  padding: 20px 40px;
+  width: 665px;
+  &__form {
+    padding: 20px 0;
+    div {
+      height: 55px;
+      display: flex;
+      justify-content: flex-end;
+      input {
+        padding-left: 16px;
+      }
+    }
+    div:nth-child(2) {
+      @extend .inputPersonalInformation;
+    }
+    div:nth-child(4) {
+      @extend .inputPersonalInformation;
+    }
+    div:nth-child(7) {
+      @extend .inputPersonalInformation;
+    }
+  }
+  &__button {
+    height: 55.92px;
+    margin-bottom: 20px !important;
+  }
+}

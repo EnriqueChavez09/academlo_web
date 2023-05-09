@@ -6,7 +6,7 @@ import {
   ItemStepAplication,
   SliderApplication,
 } from '@/ui/components/application'
-import { ButtonCommon, HeadCommon } from '@/ui/components/common'
+import { ButtonCommon } from '@/ui/components/common'
 import { HomeLayout } from '@/ui/layouts/HomeLayout'
 import { useState } from 'react'
 
@@ -28,8 +28,7 @@ export default function HomeAplication() {
   }
 
   return (
-    <HomeLayout isHome={false}>
-      <HeadCommon title="resimex | application" />
+    <HomeLayout isHome={false} title="resimex | application">
       <div className="homeApplication">
         <div className="homeApplication__background">
           <div className="homeApplication__background__trapeze"></div>
