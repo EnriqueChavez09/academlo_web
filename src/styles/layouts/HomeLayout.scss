@@ -53,7 +53,7 @@
         color: $quaternaryColor;
         margin: 0 !important;
         display: none;
-        @include breakpoints(lg) {
+        @include breakpoints(sm) {
           display: flex;
         }
       }
@@ -64,6 +64,10 @@
         border-radius: 50%;
         display: flex;
         margin: 0 10px 0 100px !important;
+        @include breakpoints(sm) {
+          display: flex;
+          margin: 0 10px 0 30px !important;
+        }
       }
       &__hello {
         position: absolute;

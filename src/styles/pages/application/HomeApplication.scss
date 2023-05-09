@@ -15,10 +15,6 @@
         width: auto;
         height: auto;
       }
-      @include breakpoints(md) {
-        width: auto;
-        height: auto;
-      }
     }
     &__trapeze {
       width: 1280px;
@@ -26,15 +22,13 @@
       background-color: $primaryColor;
       @include breakpoints(sm) {
         width: auto;
-        height: 750px;
+        height: 870px;
       }
       @include breakpoints(md) {
-        width: auto;
-        height: 600px;
+        height: 750px;
       }
       @include breakpoints(lg) {
-        width: auto;
-        height: 490px;
+        height: 540px;
       }
     }
   }
@@ -62,6 +56,9 @@
         font-weight: 300;
         max-width: 516px;
         padding-top: 24px;
+        @include breakpoints(sm) {
+          padding-bottom: 20px;
+        }
       }
       p:nth-child(4) {
         text-align: center;
@@ -84,6 +81,9 @@
       width: 344px;
       height: 55.92px;
       margin: 40px auto 100px auto !important;
+      @include breakpoints(sm) {
+        margin: 30px auto 25px !important;
+      }
     }
   }
 }

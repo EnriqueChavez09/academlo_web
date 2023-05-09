@@ -22,6 +22,12 @@
 
 .buttonHomeBlue {
   @include buttonCommonMixin();
+  @include breakpoints(sm) {
+    max-width: 208px;
+  }
+  @include breakpoints(xl) {
+    max-width: 344px;
+  }
 }
 
 .buttonHomeRed {
