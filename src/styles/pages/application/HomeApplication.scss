@@ -38,9 +38,7 @@
       padding-bottom: 40px;
       p:nth-child(1) {
         text-align: center;
-        color: $secondaryColor;
-        font-size: $sextonaryFonSize;
-        font-weight: 700;
+        @extend .h2;
         font-family: $secondaryFontFamily;
         padding-bottom: 5px;
       }

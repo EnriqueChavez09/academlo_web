@@ -2,8 +2,17 @@
   display: flex;
   &__content {
     margin-right: 20px !important;
+    @include breakpoints(sm) {
+      margin: 0 auto !important;
+    }
     &__text {
       padding-top: 48px;
+      @include breakpoints(sm) {
+        padding-left: 13px;
+      }
+      @include breakpoints(md) {
+        padding-left: auto;
+      }
       p {
         padding-top: 16px;
         @extend .h2;
@@ -15,6 +24,12 @@
   }
   &__information {
     margin-left: 20px !important;
+    @include breakpoints(sm) {
+      display: none;
+    }
+    @include breakpoints(xl) {
+      display: block;
+    }
   }
 }
 
