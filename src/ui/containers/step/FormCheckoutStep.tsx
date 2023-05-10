@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+import { redirectToStep } from '@/lib/utils/helpers/functions'
+import { ButtonCommon } from '@/ui/components/common'
 import { BackStep, InputCheckoutStep } from '@/ui/components/step'
 import { useEffect, useState } from 'react'
 
@@ -29,6 +31,10 @@ export const FormCheckoutStep = () => {
     setimage1(localStorage.getItem('uploadFileOne') ?? '')
     setimage2(localStorage.getItem('uploadFileTwo') ?? '')
   }, [])
+  const handleClick = () => {
+    localStorage.setItem('step', '3')
+    redirectToStep(3)
+  }
 
   return (
     <div className="formCheckoutStep">
@@ -84,6 +90,13 @@ export const FormCheckoutStep = () => {
         <div>
           <img src={image2} alt="" />
         </div>
+      </div>
+      <div className="formCheckoutStep__button">
+        <ButtonCommon
+          text="SAVE AND PAY"
+          customClassName="buttonHome"
+          buttonRunFunction={handleClick}
+        />
       </div>
     </div>
   )

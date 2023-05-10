@@ -23,4 +23,61 @@
       }
     }
   }
+  &__button {
+    height: 55.92px;
+    display: flex;
+    @include breakpoints(xl) {
+      display: none;
+    }
+  }
+  div:nth-child(3) {
+    display: block;
+    @include breakpoints(lg) {
+      display: flex;
+      div:nth-child(1) {
+        width: 100%;
+        margin-right: 10px !important;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  div:nth-child(4) {
+    display: block;
+    @include breakpoints(lg) {
+      display: flex;
+      div:nth-child(1) {
+        width: 100%;
+        margin-right: 10px !important;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        margin-left: 10px !important;
+      }
+    }
+  }
+  div:nth-child(5) {
+    display: block;
+    @include breakpoints(lg) {
+      display: flex;
+      div:nth-child(1) {
+        width: 100%;
+        margin-right: 10px !important;
+      }
+      div:nth-child(2) {
+        width: 100%;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+      div:nth-child(3) {
+        width: 100%;
+        margin-left: 10px !important;
+        div {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
 }
