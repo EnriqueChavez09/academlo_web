@@ -1,7 +1,15 @@
 .formUploadStep {
   @extend .borderContent;
   padding: 20px 40px;
-  width: 665px;
+  @include breakpoints(sm) {
+    width: 350px;
+  }
+  @include breakpoints(md) {
+    width: 391px;
+  }
+  @include breakpoints(lg) {
+    width: 665px;
+  }
   &__form {
     padding: 20px 0;
     div:nth-child(2) {
