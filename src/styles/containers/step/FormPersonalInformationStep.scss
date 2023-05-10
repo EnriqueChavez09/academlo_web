@@ -12,7 +12,15 @@
 .formPersonalInformationStep {
   @extend .borderContent;
   padding: 20px 40px;
-  width: 665px;
+  @include breakpoints(sm) {
+    width: 350px;
+  }
+  @include breakpoints(md) {
+    width: 391px;
+  }
+  @include breakpoints(lg) {
+    width: 665px;
+  }
   &__form {
     padding: 20px 0;
     div {
@@ -26,15 +34,28 @@
     div:nth-child(2) {
       @extend .inputPersonalInformation;
     }
-    div:nth-child(4) {
+    div:nth-child(6) {
       @extend .inputPersonalInformation;
     }
-    div:nth-child(7) {
+    div:nth-child(11) {
       @extend .inputPersonalInformation;
     }
   }
   &__button {
     height: 55.92px;
     margin-bottom: 20px !important;
+  }
+}
+
+.displayNoneInput {
+  display: flex !important;
+  @include breakpoints(md) {
+    display: none !important;
+  }
+}
+.displayFlexInput {
+  display: none !important;
+  @include breakpoints(md) {
+    display: flex !important;
   }
 }

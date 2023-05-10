@@ -8,7 +8,7 @@ export const FormPersonalInformationStep = () => {
         <div>
           <InputHome name="legal_name" placeholder="Legal name" type="text" />
         </div>
-        <div>
+        <div className="displayFlexInput">
           <div>
             <InputHome
               name="nationality"
@@ -20,6 +20,16 @@ export const FormPersonalInformationStep = () => {
             <InputHome name="gender" placeholder="Your Gender" type="text" />
           </div>
         </div>
+        <div className="displayNoneInput">
+          <InputHome
+            name="nationality"
+            placeholder="Your Nationality"
+            type="text"
+          />
+        </div>
+        <div className="displayNoneInput">
+          <InputHome name="gender" placeholder="Your Gender" type="text" />
+        </div>
         <div>
           <InputHome
             name="residence"
@@ -27,7 +37,7 @@ export const FormPersonalInformationStep = () => {
             type="text"
           />
         </div>
-        <div>
+        <div className="displayFlexInput">
           <div>
             <InputHome
               name="address"
@@ -39,19 +49,35 @@ export const FormPersonalInformationStep = () => {
             <InputHome name="postcode" placeholder="Postcode" type="text" />
           </div>
         </div>
+        <div className="displayNoneInput">
+          <InputHome
+            name="address"
+            placeholder="Residence address"
+            type="text"
+          />
+        </div>
+        <div className="displayNoneInput">
+          <InputHome name="postcode" placeholder="Postcode" type="text" />
+        </div>
         <div>
           <InputHome name="phone" placeholder="Contact Phone" type="text" />
         </div>
         <div>
           <InputHome name="email" placeholder="E-mail" type="text" />
         </div>
-        <div>
+        <div className="displayFlexInput">
           <div>
             <InputHome name="job" placeholder="Your Job" type="text" />
           </div>
           <div>
             <InputHome name="birth" placeholder="Date of birth" type="text" />
           </div>
+        </div>
+        <div className="displayNoneInput">
+          <InputHome name="job" placeholder="Your Job" type="text" />
+        </div>
+        <div className="displayNoneInput">
+          <InputHome name="birth" placeholder="Date of birth" type="text" />
         </div>
         <div>
           <InputHome name="comment" placeholder="Any comments" type="text" />
