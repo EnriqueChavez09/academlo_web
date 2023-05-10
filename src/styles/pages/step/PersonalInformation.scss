@@ -1,5 +1,6 @@
 .personalInformation {
   display: flex;
+  background-color: white;
   &__content {
     margin-right: 20px !important;
     @include breakpoints(sm) {
@@ -24,11 +25,17 @@
   }
   &__information {
     margin-left: 20px !important;
+    margin-top: 175px !important;
     @include breakpoints(sm) {
       display: none;
     }
     @include breakpoints(xl) {
       display: block;
+    }
+    &__button {
+      width: 285px;
+      height: 55.92px;
+      margin-top: 36px !important;
     }
   }
 }

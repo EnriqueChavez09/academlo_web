@@ -2,11 +2,16 @@ import { ButtonCommon } from '@/ui/components/common'
 import { InputHome } from '@/ui/components/home'
 
 export const FormPersonalInformationStep = () => {
+  const handleClick = () => {
+    localStorage.setItem('step', '1')
+    window.location.href = '/application'
+  }
+
   return (
     <div className="formPersonalInformationStep">
       <div className="formPersonalInformationStep__form">
         <div>
-          <InputHome name="legal_name" placeholder="Legal name" type="text" />
+          <InputHome name="name" placeholder="Legal name" type="text" />
         </div>
         <div className="displayFlexInput">
           <div>
@@ -84,7 +89,11 @@ export const FormPersonalInformationStep = () => {
         </div>
       </div>
       <div className="formPersonalInformationStep__button">
-        <ButtonCommon customClassName="buttonHome" text="SAVE AND CONTINUE" />
+        <ButtonCommon
+          customClassName="buttonHome"
+          text="SAVE AND CONTINUE"
+          buttonRunFunction={handleClick}
+        />
       </div>
     </div>
   )

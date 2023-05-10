@@ -2,29 +2,24 @@
 
 import { BackgroundImageService } from '@/lib/services/local/backgroundImageService'
 import { StepService } from '@/lib/services/local/stepService'
+import { redirectToStep } from '@/lib/utils/helpers/functions'
 import {
   ItemStepAplication,
   SliderApplication,
 } from '@/ui/components/application'
 import { ButtonCommon } from '@/ui/components/common'
 import { HomeLayout } from '@/ui/layouts/HomeLayout'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function HomeAplication() {
   const dataImages = BackgroundImageService.getListImages()
-  const [numero, setNumero] = useState(0)
+  const [step, setStep] = useState(0)
+  useEffect(() => {
+    setStep(Number(localStorage.getItem('step') ?? 0))
+  }, [])
+
   const handleClick = () => {
-    if (numero == 0) {
-      setNumero(numero + 1)
-    }
-    if (numero == 1) {
-      setNumero(numero + 1)
-    }
-    if (numero == 2) {
-      setNumero(numero + 1)
-    } else if (numero == 3) {
-      setNumero(numero - 3)
-    }
+    redirectToStep(step)
   }
 
   return (
@@ -33,7 +28,7 @@ export default function HomeAplication() {
         <div className="homeApplication__background">
           <div className="homeApplication__background__trapeze"></div>
           <div className="homeApplication__background__image">
-            <SliderApplication itemBackground={dataImages[numero]} />
+            <SliderApplication itemBackground={dataImages[step]} />
           </div>
         </div>
         <div className="homeApplication__content">
@@ -55,7 +50,7 @@ export default function HomeAplication() {
                 <ItemStepAplication
                   key={item.id}
                   itemStep={item}
-                  numberActive={numero}
+                  numberActive={step}
                 />
               )
             })}
@@ -64,7 +59,7 @@ export default function HomeAplication() {
             <ButtonCommon
               customClassName="buttonHomeBlue"
               buttonRunFunction={handleClick}
-              text={numero === 0 ? 'GET STARTED' : 'CONTINUE'}
+              text={step === 0 ? 'GET STARTED' : 'CONTINUE'}
             />
           </div>
         </div>
