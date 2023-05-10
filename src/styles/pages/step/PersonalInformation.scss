@@ -9,7 +9,7 @@
     &__text {
       padding-top: 48px;
       @include breakpoints(sm) {
-        padding-left: 13px;
+        padding-left: 18px;
       }
       @include breakpoints(md) {
         padding-left: auto;
