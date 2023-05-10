@@ -19,6 +19,9 @@
     width: 391px;
   }
   @include breakpoints(lg) {
+    width: 410px;
+  }
+  @include breakpoints(xl) {
     width: 665px;
   }
   &__form {

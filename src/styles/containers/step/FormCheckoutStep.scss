@@ -1,8 +1,18 @@
 .formCheckoutStep {
   @extend .borderContent;
   padding: 20px 40px;
-  width: 665px;
-
+  @include breakpoints(sm) {
+    width: 350px;
+  }
+  @include breakpoints(md) {
+    width: 391px;
+  }
+  @include breakpoints(lg) {
+    width: 410px;
+  }
+  @include breakpoints(xl) {
+    width: 665px;
+  }
   &__back {
     display: flex;
     a {
@@ -26,7 +36,7 @@
   &__button {
     height: 55.92px;
     display: flex;
-    @include breakpoints(xl) {
+    @include breakpoints(lg) {
       display: none;
     }
   }

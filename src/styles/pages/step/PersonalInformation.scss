@@ -29,7 +29,7 @@
     @include breakpoints(sm) {
       display: none;
     }
-    @include breakpoints(xl) {
+    @include breakpoints(lg) {
       display: block;
     }
     &__button {
