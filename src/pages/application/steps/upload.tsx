@@ -5,7 +5,7 @@ import { HomeLayout } from '@/ui/layouts/HomeLayout'
 
 export default function Upload() {
   return (
-    <HomeLayout isStep={true} title="">
+    <HomeLayout isStep={true} title="resimex | upload">
       <div className="personalInformation">
         <div className="personalInformation__content">
           <div className="personalInformation__content__text">

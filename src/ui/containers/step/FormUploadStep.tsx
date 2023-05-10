@@ -3,7 +3,7 @@ import { InputUploadStep } from '@/ui/components/step'
 
 export const FormUploadStep = () => {
   const handleClick = () => {
-    localStorage.setItem('step', '3')
+    localStorage.setItem('step', '2')
     window.location.href = '/application'
   }
 
@@ -15,6 +15,7 @@ export const FormUploadStep = () => {
             label="Upload front to your Passport"
             text="Upload Additional file"
             subtext="Attach file. File size of your documents should not exceed 10MB"
+            name="uploadFileOne"
           />
         </div>
         <div>
@@ -22,6 +23,7 @@ export const FormUploadStep = () => {
             label="Upload front to your Passport"
             text="Upload Additional file"
             subtext="Attach file. File size of your documents should not exceed 10MB"
+            name="uploadFileTwo"
           />
         </div>
       </div>

@@ -3,7 +3,7 @@ import { InputHome } from '@/ui/components/home'
 
 export const FormPersonalInformationStep = () => {
   const handleClick = () => {
-    localStorage.setItem('step', '2')
+    localStorage.setItem('step', '1')
     window.location.href = '/application'
   }
 
@@ -11,7 +11,7 @@ export const FormPersonalInformationStep = () => {
     <div className="formPersonalInformationStep">
       <div className="formPersonalInformationStep__form">
         <div>
-          <InputHome name="legal_name" placeholder="Legal name" type="text" />
+          <InputHome name="name" placeholder="Legal name" type="text" />
         </div>
         <div className="displayFlexInput">
           <div>

@@ -1,11 +1,14 @@
 export const redirectToStep = (step: number) => {
-  if (step === 1) {
+  if (step === 0) {
     window.location.href = '/application/steps'
   }
-  if (step === 2) {
+  if (step === 1) {
     window.location.href = '/application/steps/upload'
   }
-  if (step === 3) {
+  if (step === 2) {
     window.location.href = '/application/steps/checkout'
+  }
+  if (step === 3) {
+    window.location.href = '/'
   }
 }

@@ -19,10 +19,6 @@ export default function HomeAplication() {
   }, [])
 
   const handleClick = () => {
-    if (step === 0) {
-      setStep(1)
-      localStorage.setItem('step', '1')
-    }
     redirectToStep(step)
   }
 

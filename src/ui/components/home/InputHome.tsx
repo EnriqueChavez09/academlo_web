@@ -12,6 +12,7 @@ export const InputHome: FC<Props> = ({ placeholder, name, type }) => {
     const value = e.target.value
     if (e.target.name === name) {
       setfirst(value)
+      localStorage.setItem(`${e.target.name}`, `${value}`)
     }
   }
   return (
