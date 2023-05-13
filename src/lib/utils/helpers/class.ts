@@ -2,10 +2,14 @@ import arrowLeftData from '../../../../public/assets/icons/arrow-left.svg'
 import arrowReightData from '../../../../public/assets/icons/arrow-right.svg'
 import arrowTopData from '../../../../public/assets/icons/arrow-top.svg'
 import checkData from '../../../../public/assets/icons/check.svg'
+import errorData from '../../../../public/assets/icons/error.svg'
+import exitData from '../../../../public/assets/icons/exit.svg'
 import eyeData from '../../../../public/assets/icons/eye.svg'
 import hiData from '../../../../public/assets/icons/hi.svg'
 import mailData from '../../../../public/assets/icons/mail.svg'
+import messageData from '../../../../public/assets/icons/message.svg'
 import sendData from '../../../../public/assets/icons/send.svg'
+import successData from '../../../../public/assets/icons/success.svg'
 import uploadData from '../../../../public/assets/icons/upload.svg'
 import backgroundData from '../../../../public/assets/images/background.svg'
 import backgroundMobileData from '../../../../public/assets/images/background_mobile.svg'
@@ -31,4 +35,8 @@ export class AssetData {
   static iconArrowRight = arrowReightData
   static iconArrowTop = arrowTopData
   static iconUpload = uploadData
+  static iconError = errorData
+  static iconSuccess = successData
+  static iconMessage = messageData
+  static iconExit = exitData
 }

@@ -50,6 +50,27 @@
   border: 2px solid $tertiaryColor;
 }
 
+.buttonModalContinue {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: $tertiaryColor;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  color: $quaternaryColor;
+}
+.buttonModalCancel {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  background-color: $quaternaryColor;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  color: $tertiaryColor;
+  border: 1px solid $tertiaryColor;
+}
 // .buttonViewMoreRed {
 //   @include buttonCommonMixin(
 //     $color: $colorRed300,
