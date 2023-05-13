@@ -1,0 +1,59 @@
+.titleModal {
+  font-weight: 600;
+  font-family: $secondaryFontFamily;
+  font-size: 30px;
+}
+
+.errorModal {
+  color: $quintonaryColor;
+}
+.successModal {
+  color: $secondaryColor;
+}
+.messageModal {
+  color: $tertiaryColor;
+}
+
+.modalCommon {
+  width: 553px;
+  background-color: $quaternaryColor;
+  border-radius: 13px;
+  padding: 40px;
+  &__icons {
+    display: flex;
+    div:nth-child(1) {
+      margin-left: 0 !important;
+    }
+    div:nth-child(2) {
+      margin-right: 0 !important;
+      margin-top: 0 !important;
+      cursor: pointer;
+    }
+  }
+  &__texts {
+    padding-top: 30px;
+    p:nth-child(1) {
+      @extend .titleModal;
+    }
+    p:nth-child(2) {
+      font-size: 16px;
+      font-weight: 600;
+      color: $sextonaryColor;
+    }
+  }
+  &__buttons {
+    display: flex;
+    padding-top: 40px;
+    div:nth-child(1) {
+      width: 115px;
+      height: 36px;
+      margin-right: 8px !important;
+    }
+    div:nth-child(2) {
+      width: 151px;
+      height: 36px;
+      margin-right: 8px !important;
+      margin-left: 8px !important;
+    }
+  }
+}

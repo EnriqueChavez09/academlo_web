@@ -1,0 +1,44 @@
+.itemModal {
+  &__success {
+    &__images {
+      display: flex;
+      &__image {
+        background-color: $octenaryColor;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        &__success {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  &__message {
+    &__images {
+      display: flex;
+      &__image {
+        background-color: $octenaryColor;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        &__message {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  &__error {
+    &__images {
+      display: flex;
+      &__image {
+        background-color: $octenaryColor;
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        &__error {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

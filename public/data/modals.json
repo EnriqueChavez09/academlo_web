@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Información guardada con éxito!"
+  },
+
+  {
+    "id": 2,
+    "title": "¿Seguro que deseas continuar?"
+  },
+
+  {
+    "id": 3,
+    "title": "Hay un error en tu formulario"
+  }
+]
